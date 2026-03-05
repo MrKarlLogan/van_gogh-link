@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&subset=cyrillic&display=swap");
+@import "./styles/header.css";
+@import "./styles//main.css";
+@import "./styles/products.css";
+@import "./styles/about-company.css";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-inline-size: 390px;
+  max-inline-size: 1440px;
+  inline-size: 100%;
+  block-size: 100dvh;
+  margin: 0 auto;
+  font-family: "Open sans";
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  inline-size: fit-content;
+  padding: 8px 30px;
+  appearance: none;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(39, 42, 51, 1);
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgba(238, 117, 62, 1);
+}
+
+.button:disabled {
+  opacity: 0.2;
+}
+
+@media (max-width: 1440px) {
+  body {
+    max-inline-size: 1160px;
+  }
+}
+
+@media (max-width: 1160px) {
+  body {
+    max-inline-size: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    max-inline-size: 576px;
+  }
+}

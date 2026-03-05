@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test case</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <img src="./styles/assets/logo.svg" alt="Логотип" class="header__logo">
+    <nav class="header__nav">
+      <a href="#" class="header__nav-link">Главная</a>
+      <a href="#" class="header__nav-link">Каталог</a>
+      <a href="#about-company" class="header__nav-link">О компании</a>
+      <a href="#" class="header__nav-link">Оплата и доставка</a>
+      <a href="#" class="header__nav-link">Контакты</a>
+    </nav>
+    <button class="header__burger-btn" aria-label="burger button">
+      <img class="header__burger-btn-icon" src="./styles/assets/burger close.svg" alt="Бургер меню">
+    </button>
+  </header>
+  <main class="main">
+    <section class="products">
+      <h2 class="products__title">Рекомендуемое оборудование</h2>
+      <div class="products__items"></div>
+    </section>
+    <button class="button button-catalog">Перейти в каталог</button>
+    <section id="about-company" class="about-company">
+      <h2 class="about-company__title">О компании</h2>
+      <div class="about-company__container">
+        <div class="about-section-img">
+          <img class="about-image__one" src="./styles/assets/img1.png" alt="Изображение офиса 1">
+          <img class="about-image__two" src="./styles/assets/img2.png" alt="Изображение офиса 2">
+          <img class="about-image__three" src="./styles/assets/img3.png" alt="Изображение офиса 3">
+        </div>
+        <div class="about-section-description">
+          <div class="description-container">
+            <h3 class="description-container__title">Компания «SPARTSPRO» специализируется на поставках лифтового
+              оборудования, комплектующих и запчастей для
+              лифтов и эскалаторов ведущих мировых и российских производителей.</h3>
+            <ul class="description-container__items">
+              <li class="description-container__list"><img src="./styles/assets/Not available.svg"
+                  alt="Идентификатор списка">Гарантия
+                качества – работаем только с проверенными производителями.</span>
+              <li class="description-container__list"><img src="./styles/assets/Not available.svg"
+                  alt="Идентификатор списка">Собственный
+                склад – более 30 000 наименований в наличии для оперативных отгрузок.</span>
+              <li class="description-container__list"><img src="./styles/assets/Not available.svg"
+                  alt="Идентификатор списка">Соблюдение
+                сроков – приоритет компании: быстрая обработка заказов и доставка без задержек.</span>
+            </ul>
+            <p>Мы обеспечиваем бесперебойные поставки для ваших проектов. Оставьте заявку – и получите коммерческое
+              предложение в кратчайшие сроки!</p>
+          </div>
+          <button class="button">Подробнее</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="index.js" defer></script>
+</body>
+
+<template id="template__card">
+  <article class="card">
+    <img src="" alt="" class="card__image">
+    <div class="card__description">
+      <h3 class="card__title"></h3>
+      <span class="card__status">
+        <img src="" alt="" class="card__status-icon">
+        <span class="card__status-text"></span>
+      </span>
+      <button class="button">Подробнее</button>
+    </div>
+  </article>
+</template>
+
+</html>
