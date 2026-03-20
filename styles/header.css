@@ -25,6 +25,7 @@
   background-color: inherit;
   color: inherit;
   text-transform: uppercase;
+  transition: 0.1s;
 }
 
 .header__nav-link:hover {

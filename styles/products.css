@@ -26,6 +26,13 @@
   display: flex;
 }
 
+.card__image {
+  inline-size: 220px;
+  aspect-ratio: 1;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
 .card__description {
   padding: 31px 30px;
   display: flex;
@@ -74,7 +81,6 @@
   .card {
     min-block-size: min-content;
     flex-direction: column;
-    max-block-size: 373px;
     block-size: 100%;
   }
 
